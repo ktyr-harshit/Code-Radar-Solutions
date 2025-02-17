@@ -2,7 +2,8 @@
 int main()
 {
    float a, b;
-   scanf("%d %d", &a, &b);
-   printf("%d", a*b);
+   scanf("%f %f", &a, &b);
+   c = a*b;
+   printf("%f", c);
     return 0;
 }
