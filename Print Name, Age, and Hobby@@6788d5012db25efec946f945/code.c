@@ -5,6 +5,6 @@ int main() {
     scanf("%s", a);
     scanf("%s", h);
 
-    printf("Name: %s\nAge: \nHobby:", n, a, h);
+    printf("Name: %s\nAge: %s\nHobby: %s", n, a, h);
     return 0;
 }
