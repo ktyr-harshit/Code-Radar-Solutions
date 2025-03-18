@@ -1,12 +1,8 @@
 #include <stdio.h>
+
 int main() {
-    int a;
-    scanf("%d",&a);
-    if(a&1==0){
-        printf("1");
-    }
-    else{
-        printf("0");
-    }
+    int number;
+    scanf("%d", &number);
+    printf("%d\n", number & -number);
     return 0;
 }
