@@ -7,7 +7,11 @@ int main() {
     if (number == 0) {
         printf("No set bit\n");
     } else {
-        int position = __builtin_ctz(number) + 1;
+        int position = 1;
+        while ((number & 1) == 0) {
+            number >>= 1;
+            position++;
+        }
         printf("%d\n", position);
     }
     
