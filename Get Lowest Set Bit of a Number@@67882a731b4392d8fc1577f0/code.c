@@ -1,12 +1,15 @@
 #include <stdio.h>
+
 int main() {
-    int a;
-    scanf("%d",&a);
-    if(a&2==0){
-        printf("1");
+    int number;
+    scanf("%d", &number);
+    
+    if (number == 0) {
+        printf("No set bit\n");
+    } else {
+        int position = __builtin_ctz(number) + 1;
+        printf("%d\n", position);
     }
-    else{
-        printf("0");
-    }
+    
     return 0;
 }
