@@ -1,7 +1,12 @@
 #include <stdio.h>
+
 int main() {
-    int a;
-    scanf("%d",&a);
-    printf("%d",~a);
+    unsigned int number;
+    scanf("%u", &number);
+    
+    int leading_zeros = __builtin_clz(number); 
+    
+    printf("%d\n", leading_zeros);
+    
     return 0;
 }
